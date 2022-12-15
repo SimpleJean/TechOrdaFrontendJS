@@ -1,0 +1,22 @@
+class Polygon {
+  constructor(len) {
+    this.len = len;
+  }
+  perimeter() {
+    let count = 0;
+
+    this.len.map((item) => {
+      count = count + item;
+    });
+
+    return count;
+  }
+}
+
+const rectangle = new Polygon([10, 20, 10, 20]);
+const square = new Polygon([10, 10, 10, 10]);
+const pentagon = new Polygon([10, 20, 30, 40, 43]);
+
+console.log(rectangle.perimeter());
+console.log(square.perimeter());
+console.log(pentagon.perimeter());
